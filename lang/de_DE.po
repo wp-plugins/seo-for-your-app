@@ -1,0 +1,33 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: SEO YOR YOUR APP\n"
+"POT-Creation-Date: 2015-04-13 14:05+0100\n"
+"PO-Revision-Date: 2015-04-13 14:07+0100\n"
+"Last-Translator: \n"
+"Language-Team: Nebelhorn <uma@nebelhorn.com>\n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.4\n"
+"X-Poedit-Basepath: ../\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../trunk/seo-for-your-app.php:60
+msgid "SEO For Your App - Options"
+msgstr "SEO For Your App - Optionen"
+
+#: ../trunk/seo-for-your-app.php:65
+msgid "Package ID:"
+msgstr "Paket -D:"
+
+#: ../trunk/seo-for-your-app.php:67
+msgid "Please enter the package ID, e.g. com.blappsta.previewapp"
+msgstr "Bitte die Paket-ID hier eingeben (z.B. com.blappsta.previewapp)"
+
+#: ../trunk/seo-for-your-app.php:70
+msgid "Please enter the scheme, e.g. blappsta"
+msgstr "Bitte Scheme hier eingeben (z.B. blappsta)"
