@@ -3,7 +3,7 @@
 Plugin Name: SEO For Your App
 Plugin URI: 
 Description: Adds SEO Deeplinking Capability for your App to your Site
-Version: 0.3
+Version: 0.3.1
 Author: Nebelhorn Medien GmbH
 Author URI: http://www.nebelhorn.com
 License: GPLv2 or later
@@ -168,19 +168,12 @@ class NH_SEOAPPScripts
 
 			if(!empty($sfya_option) && is_array($sfya_option) && !empty($sfya_option['package_id']) && !empty($sfya_option['scheme'])) {
 				echo '<link rel="alternate" href="android-app://'.$sfya_option['package_id'].'/'.$sfya_option['scheme'].'/blappsta/';
-				if (is_single()) echo '?article='.$postid;
+				if (is_single() && !is_home() && !is_front_page()) echo '?article='.$postid;
 				echo "\" />\n";
 				return;
 			}
 			
 			
-			$packageID = get_option( 'sfya_package_id', '' );
-			$scheme = get_option( 'sfya_scheme', '' );
-			if ( $packageID != '' ) {
-				if ( $scheme != '' ) {
-					echo "<link rel=\"alternate\" href=\"android-app://$packageID/$scheme/blappsta/?article=$postid\" />\n";
-				}
-			}
 			}
 		}
 }

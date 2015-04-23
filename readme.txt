@@ -5,7 +5,7 @@ Tags: seo, app, google, deeplink
 Donate link:
 Requires at least: 3.0
 Tested up to: 4.1.1
-Stable tag: 0.3
+Stable tag: 0.3.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -41,6 +41,9 @@ A. Go to www.blappsta.com where you can apply your native app
 
 
 == Changelog ==
+= 0.3.1 =
+- Fix deeplink frontpage
+
 = 0.3 =
 - Add deeplink for frontpage
 
@@ -51,7 +54,12 @@ A. Go to www.blappsta.com where you can apply your native app
 - Initial Release
 
 
+
 == Upgrade Notice ==
+= 0.3.1 =
+- Fix deeplink frontpage
+
+
 = 0.3 =
 - Add deeplink for frontpage
 
