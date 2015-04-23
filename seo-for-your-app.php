@@ -3,7 +3,7 @@
 Plugin Name: SEO For Your App
 Plugin URI: 
 Description: Adds SEO Deeplinking Capability for your App to your Site
-Version: 0.2
+Version: 0.3
 Author: Nebelhorn Medien GmbH
 Author URI: http://www.nebelhorn.com
 License: GPLv2 or later
@@ -161,12 +161,15 @@ class NH_SEOAPPScripts
 	 * ADD Deeplink  to header
 	 */
 	  function sfya_wp_head() {
-		if (is_single()) {
+
+		if (is_single() || is_home() || is_front_page()) {
 			$postid = get_the_ID();
 			$sfya_option = get_option('sfya_option');
-			
+
 			if(!empty($sfya_option) && is_array($sfya_option) && !empty($sfya_option['package_id']) && !empty($sfya_option['scheme'])) {
-				echo "<link rel=\"alternate\" href=\"android-app://".$sfya_option['package_id']."/".$sfya_option['scheme']."/blappsta/?article=$postid\" />\n";
+				echo '<link rel="alternate" href="android-app://'.$sfya_option['package_id'].'/'.$sfya_option['scheme'].'/blappsta/';
+				if (is_single()) echo '?article='.$postid;
+				echo "\" />\n";
 				return;
 			}
 			
