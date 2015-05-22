@@ -1,4 +1,4 @@
-﻿=== SEO For Your App ===
+﻿=== App ===
 
 Contributors: nebelhorn
 Tags: seo, app, google, deeplink
